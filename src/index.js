@@ -1,8 +1,23 @@
 import $ from 'jQuery';
 import _ from 'lodash';
 import slideshow from './Modules/slideshow';
+import header from './Modules/header';
 
 console.log('This is index JS')
+
+header.updateContent({
+	title: "Header new",
+	blocks: [
+		{
+			text: "work",
+			href: "https://www.google.com"
+		},
+		{
+			text: "play",
+			href: "https://www.fb.com"
+		}
+	]
+}).generate();
 
 slideshow.updateContent([
 		{
