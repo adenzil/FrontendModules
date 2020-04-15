@@ -20,6 +20,9 @@ header.updateContent = (content) => {
 		$.each(content.blocks, (index, obj) => {
 			let $block = $("<li>");
 			let $link = $("<a>", {href: obj.href, text: obj.text});
+			if(obj.target) {
+				$link.attr("target", obj.target);
+			}
 			$block.append($link);
 			header.$menu.append($block);
 		})

@@ -9,12 +9,17 @@ header.updateContent({
 	title: "Header new",
 	blocks: [
 		{
-			text: "work",
-			href: "https://www.google.com"
+			text: "Home",
+			href: "#home",
 		},
 		{
-			text: "play",
-			href: "https://www.fb.com"
+			text: "About us",
+			href: "https://www.google.com",
+			target: "_blank"
+		},
+		{
+			text: "Contact us",
+			href: "#contact-us"
 		}
 	]
 }).generate();
